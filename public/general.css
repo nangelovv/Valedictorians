@@ -8,6 +8,7 @@ mdui-snackbar {
 
 mdui-text-field {
   padding-bottom: 10px;
+  width: 80%;
 }
 
 md-outlined-text-field {

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
-import {APINoAuth} from '../common/APICalls'
-import {sha256} from '../common/commonFuncs'
+import { APINoAuth } from '../common/APICalls'
+import { sha256 } from '../common/commonFuncs'
 
 export default function Login() {
   const navigate = useNavigate()
@@ -49,13 +49,14 @@ export default function Login() {
     }
   }
 
-  return (<div className='col-6 offset-3'>
-    <mdui-text-field id="username" label="Имейл"></mdui-text-field>
+  return (<><div className='col-md-6 offset-md-3 text-center'>
+    <mdui-text-field id="username" label="Имейл" ></mdui-text-field>
     <mdui-text-field id="password" toggle-password label="Парола" type="password"></mdui-text-field>
+    </div>
+    <div className='col-md-6 offset-md-3 text-center'>
     <mdui-button onClick={sendData}>Вход</mdui-button>
     <mdui-button variant='text' onClick={() => navigate('/register')}>Нямате профил?</mdui-button>
-    <mdui-button variant='text'>Забравена парола?</mdui-button>
-    {/* <mdui-checkbox>Запомни ме</mdui-checkbox> */}
-  </div>
+    <mdui-button variant='text'>Забравена парола?</mdui-button></div>
+    {/* <mdui-checkbox>Запомни ме</mdui-checkbox> */}</>
   )
 }
