@@ -14,11 +14,11 @@ export default function Home() {
     >
       <Slider style={{ maxWidth: '75vw', maxHeight: '75vh', margin: 'auto' }}>
         <Slide index={0}>
-          <Image src="https://picsum.photos/700/400" isBgImage/></Slide>
+          <Image src="https://loremflickr.com/100/600?random=1"/></Slide>
         <Slide index={1}>
-          <Image src="https://picsum.photos/600/400" isBgImage/></Slide>
+          <Image src="https://loremflickr.com/200/200?random=2"/></Slide>
         <Slide index={2}>
-          <Image src="https://picsum.photos/500/400" isBgImage/></Slide>
+          <Image src="https://loremflickr.com/200/200?random=3"/></Slide>
       </Slider>
       <div className='d-flex justify-content-center'>
       <ButtonBack style={{all: 'unset'}}><mdui-button-icon icon="chevron_left"></mdui-button-icon></ButtonBack>

@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
 import React from 'react';
 import Layout from './Layout';
 import Home from './pages/Home';
@@ -39,8 +39,8 @@ export default function App() {
   }
   else if (!ExpiredToken) {
     return (
-
-      <BrowserRouter>
+      // !!!!! Use HashRouter instead of BrowserRouter while developing !!!!!
+      <HashRouter> 
         <Routes>
           <Route path='/' element={<Layout />}>
             <Route index element={<Home />} />
@@ -53,7 +53,7 @@ export default function App() {
             <Route path='*' element={<Error />} />
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     )
   }
 }

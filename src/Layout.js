@@ -26,9 +26,9 @@ export default function Layout() {
         <NavLink to={'/about'}><mdui-button variant="text">За нас</mdui-button></NavLink>
         <mdui-dropdown>
           <mdui-button slot="trigger" variant="text" end-icon="expand_more">Услуги</mdui-button>
-          <mdui-menu>
+          <mdui-card variant='filled' id='cardSettings'>
             <DropMenu menuItems={DropMenuItems} onNavigate={(path) => console.log('Navigating to:', path)} />
-          </mdui-menu>
+          </mdui-card>
         </mdui-dropdown>
         {!isAuthenticated ?
           <NavLink to={'/login'}><mdui-button variant="text">Вход</mdui-button></NavLink>
@@ -38,6 +38,7 @@ export default function Layout() {
             <mdui-card variant='filled' id='cardSettings'>
               <SettingsLayout />
             </mdui-card>
+            
           </mdui-dropdown>
         }
       </mdui-top-app-bar>

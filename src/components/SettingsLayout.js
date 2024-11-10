@@ -10,10 +10,17 @@ export default function SettingsLayout() {
   const handleNavigate = (view) => setCurrentView(view);
   const handleBack = () => setCurrentView('menu');
 
+  const DropMenuItems = [
+    { label: 'Групови & Индивидуални уроци', path: '/services', external: false },
+    { label: 'Еднодневни семинари', path: '/services', external: false },
+    { label: 'Пробни матури', path: '/services', external: false },
+    { label: 'Екскурзии', path: '/services', external: false },
+  ];
+
   const renderContent = () => {
     switch (currentView) {
       case 'menu':
-        return <DropMenu onNavigate={handleNavigate} />;
+        return <DropMenu menuItems={DropMenuItems} onNavigate={handleNavigate} />;
       // case 'general':
       //   return <GeneralSettings onBack={handleBack} />;
       // case 'appearance':
@@ -28,6 +35,7 @@ export default function SettingsLayout() {
   return (
     <>
       {renderContent()}
+      <mdui-button variant="text" onClick={localStorage.removeItem('ArsenicToken')}>Изход</mdui-button>
     </>
   );
 }
