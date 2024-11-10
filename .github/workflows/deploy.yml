@@ -1,0 +1,29 @@
+name: Deploy on Commit to Main
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Check out the repository
+      - name: Check out the repository
+        uses: actions/checkout@v2
+
+      # Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '21'
+
+      # Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Run the deploy command
+      - name: Run deploy script
+        run: npm run deploy
