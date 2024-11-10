@@ -1,0 +1,94 @@
+mdui-layout-main {
+  background-color: rgb(var(--mdui-color-surface));
+}
+
+mdui-snackbar {
+  border-radius: 100%;
+}
+
+mdui-text-field {
+  padding-bottom: 10px;
+}
+
+md-outlined-text-field {
+  text-align: start;
+}
+
+span, time, label, div, h1, h2, h3, h4, h5, h6 {
+  color: rgb(var(--mdui-color-on-background));
+}
+
+.noStyle {
+  text-decoration: none;
+  color: inherit;
+}
+
+#cardSettings {
+  background-color: rgb(var(--mdui-color-surface-container));
+  min-width: 300px;
+  max-height: 500px;
+  padding: 0.5rem;
+  margin-top: 0.77rem;
+  box-shadow: -2px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#list-menu > mdui-list-item {
+  background-color: rgb(var(--mdui-color-surface-variant));
+  margin-bottom: 0.15rem;
+  text-align: center;
+}
+
+#list-menu > mdui-list-item:first-child {
+  /* Styles for the first child of settings menu  */
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  overflow: hidden; /* Ensures that the rounded corners are respected */
+}
+
+#list-menu > mdui-list-item:last-child {
+  /* Styles for the last child of settings menu */
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  overflow: hidden; /* Ensures that the rounded corners are respected */
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 840px) {
+  #menuButton {
+      display: none;
+  }
+}
+
+.main-content {
+  height: 100%;
+  padding: 1.5rem;
+  background: rgb(var(--mdui-color-surface-bright));
+}
+
+@media (min-width: 840px) {
+  .main-content {
+      border-top-left-radius: 1.5rem;
+      border-top-right-radius: 1.5rem;
+  }
+}
+
+.carousel__dot {
+  width: 12px; /* Control the size of the dot */
+  height: 12px; /* Control the size of the dot */
+  border-radius: 50%; /* Makes the shape circular */
+  background-color: rgb(var(--mdui-color-outline)); /* Default color of the dot */
+  border: none; /* Remove any default borders */
+  margin: 5px; /* Space between dots */
+  display: inline-block; /* Ensures the dots are displayed inline */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.carousel__dot--selected {
+  background-color: rgb(var(--mdui-color-primary));
+}
