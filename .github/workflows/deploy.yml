@@ -33,3 +33,5 @@ jobs:
       # Run the deploy command
       - name: Run deploy script
         run: CI=false npm run deploy
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
