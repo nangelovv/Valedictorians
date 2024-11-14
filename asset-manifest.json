@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Valedictorians/static/css/main.baeff5ba.css",
+    "main.js": "/Valedictorians/static/js/main.0e21eaa5.js",
+    "index.html": "/Valedictorians/index.html",
+    "main.baeff5ba.css.map": "/Valedictorians/static/css/main.baeff5ba.css.map",
+    "main.0e21eaa5.js.map": "/Valedictorians/static/js/main.0e21eaa5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.baeff5ba.css",
+    "static/js/main.0e21eaa5.js"
+  ]
+}
