@@ -81,6 +81,7 @@ span, time, label, div, h1, h2, h3, h4, h5, h6 {
 .carousel__dot {
   width: 12px; /* Control the size of the dot */
   height: 12px; /* Control the size of the dot */
+  aspect-ratio: 1; /* Maintains a 1:1 ratio for a perfect circle */
   border-radius: 50%; /* Makes the shape circular */
   background-color: rgb(var(--mdui-color-outline)); /* Default color of the dot */
   border: none; /* Remove any default borders */

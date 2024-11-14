@@ -2,7 +2,10 @@ import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom';
 import React from 'react';
 import Layout from './Layout';
 import Home from './pages/Home';
-import Services from './pages/Services';
+import Seminars from './pages/services/Seminars';
+import Groups from './pages/services/Groups';
+import MockExams from './pages/services/MockExams';
+import Excursions from './pages/services/Excursions';
 import Profile from './pages/Profile';
 import About from './pages/About';
 import Error from './pages/Error';
@@ -44,10 +47,13 @@ export default function App() {
         <Routes>
           <Route path='/' element={<Layout />}>
             <Route index element={<Home />} />
-            <Route path='services' element={<Services />} />
+            <Route path='services/groups' element={<Groups />} />'
+            <Route path='services/seminars' element={<Seminars />} />
+            <Route path='services/excursions' element={<Excursions />} />
+            <Route path='services/mock-exams' element={<MockExams />} />
             <Route path='about' element={<About />} />
             <Route path='login' element={<Login />} />
-            <Route path='grades' element={<Grades />} />
+            <Route path=':username/grades' element={<Grades />} />
             <Route path='register' element={<Register />} />
             <Route path='profile/:username' element={<Profile />} />
             <Route path='*' element={<Error />} />

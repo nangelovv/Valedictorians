@@ -26,4 +26,4 @@ jobs:
 
       # Run the deploy command
       - name: Run deploy script
-        run: npm run deploy
+        run: CI=false npm run deploy

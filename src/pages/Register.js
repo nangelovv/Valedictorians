@@ -46,14 +46,19 @@ export default function Register() {
   }
 
   return (<>
-    <span>Регистрация</span>
-    <mdui-text-field id="email" label="Имейл"></mdui-text-field>
-    <mdui-text-field id="username" label="Потребителско име"></mdui-text-field>
-    <mdui-text-field id="password" toggle-password label="Парола" type="password"></mdui-text-field>
-    <mdui-text-field id="repeatPassword" toggle-password label="Повторете паролата" type="password"></mdui-text-field>
-    <mdui-text-field id="name" label="Име"></mdui-text-field>
-    <mdui-text-field id="surname" label="Фамилия"></mdui-text-field>
-    <mdui-button onClick={sendData}>Продължи</mdui-button>
-    <mdui-button variant='text' onClick={() => navigate('/login')}>Имате профил?</mdui-button></>
+
+    <div className='col-md-6 offset-md-3 text-center'>
+      <mdui-text-field id="email" label="Имейл"></mdui-text-field>
+      <mdui-text-field id="username" label="Потребителско име"></mdui-text-field>
+      <mdui-text-field id="password" toggle-password label="Парола" type="password"></mdui-text-field>
+      <mdui-text-field id="repeatPassword" toggle-password label="Повторете паролата" type="password"></mdui-text-field>
+      <mdui-text-field id="name" label="Име"></mdui-text-field>
+      <mdui-text-field id="surname" label="Фамилия"></mdui-text-field>
+    </div>
+    <div className='col-md-6 offset-md-3 text-center'>
+      <mdui-button onClick={sendData}>Продължи</mdui-button>
+      <mdui-button variant='text' onClick={() => navigate('/login')}>Имате профил?</mdui-button>
+    </div>
+  </>
   )
 }
