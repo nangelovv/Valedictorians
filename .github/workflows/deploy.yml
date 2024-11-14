@@ -10,6 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Set up Git configuration
+        run: |
+          git config user.email "nk.angelovv@gmail.com"
+          git config user.name "Nikolay Angelov"
+
       # Check out the repository
       - name: Check out the repository
         uses: actions/checkout@v2

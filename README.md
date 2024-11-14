@@ -1,4 +1,7 @@
-Version 0.0.6:
+Version 0.0.7 (Hours: 0):
+- Updating dev environment
+
+Version 0.0.6 (Hours: 2):
 - Replaced "Отличниците" with a changelog button for easy access of this changelog
 - Added all services pages and their routes (urls)
 - Updated dropdown to open when hovering instead of needing to click

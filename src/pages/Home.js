@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import {
-  ButtonBack, ButtonFirst, ButtonLast, ButtonNext, CarouselProvider, DotGroup, Image, Slide, Slider,
+  ButtonBack, ButtonNext, CarouselProvider, DotGroup, Image, Slide, Slider,
 } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
 

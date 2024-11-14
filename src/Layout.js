@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { NavLink, Outlet, useLocation, useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import { NavLink, Outlet, useNavigate } from 'react-router-dom';
 import noUser from './assets/noUser.jpg';
 import AccountSettings from './pages/AccountSettings';
 import { setTheme } from 'mdui/functions/setTheme.js';
 import DropMenu from './components/DropMenu';
 
 export default function Layout() {
+  // eslint-disable-next-line
   const [isAuthenticated, setIsAuthenticated] = useState(localStorage.getItem('ArsenicToken') ? true : false);
   setTheme('light');
 
