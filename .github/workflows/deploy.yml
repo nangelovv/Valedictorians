@@ -10,14 +10,15 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Check out the repository
+      - name: Check out the repository
+        uses: actions/checkout@v2
+
+      # Set up Git configuration (now after the checkout)
       - name: Set up Git configuration
         run: |
           git config user.email "nk.angelovv@gmail.com"
           git config user.name "Nikolay Angelov"
-
-      # Check out the repository
-      - name: Check out the repository
-        uses: actions/checkout@v2
 
       # Set up Node.js
       - name: Set up Node.js
